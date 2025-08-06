@@ -2,7 +2,7 @@ import "./Category.css"
 import React from 'react';
 import Input from "../../components/Input.jsx";
 
-const Category = () => {
+const Category = ({handleRadioChange}) => {
     return (
         <div>
             <div>
@@ -29,11 +29,11 @@ const Category = () => {
                 {/*    <input type="radio" name="test"/>*/}
                 {/*    <span className="checkmark"></span>Heels*/}
                 {/*</label>*/}
-                <Input item="All"/>
-                <Input item="Sneakers"/>
-                <Input item="Flats"/>
-                <Input item="Sandals"/>
-                <Input item="Heels"/>
+                <Input name="test" value="" title="All" handleRadioChange={handleRadioChange}/>
+                <Input name="test" value="sneakers" title="Sneakers" handleRadioChange={handleRadioChange}/>
+                <Input name="test" value="flats" title="Flats" handleRadioChange={handleRadioChange}/>
+                <Input name="test" value="sandals" title="Sandals" handleRadioChange={handleRadioChange}/>
+                <Input name="test" value="heels" title="Heels" handleRadioChange={handleRadioChange}/>
             </div>
         </div>
     );

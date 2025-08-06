@@ -4,7 +4,7 @@ import {BsFillBagHeartFill} from 'react-icons/bs';
 import React from 'react';
 import Card from "../components/Card.jsx";
 
-const Products = () => {
+const Products = ({results}) => {
     return (
         <div>
             <section className="card-container">
@@ -33,21 +33,7 @@ const Products = () => {
                 {/*        </section>*/}
                 {/*    </div>*/}
                 {/*</section>*/}
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                {results}
             </section>
         </div>
     );
